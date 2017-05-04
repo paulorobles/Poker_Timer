@@ -1,0 +1,14 @@
+C:\Users\omar.soto\Documents\GitHub\PokerTimerClock\PokerTimerClockApp\Business\bin\Debug\Business.dll
+C:\Users\omar.soto\Documents\GitHub\PokerTimerClock\PokerTimerClockApp\Business\bin\Debug\Business.pdb
+C:\Users\omar.soto\Documents\GitHub\PokerTimerClock\PokerTimerClockApp\Business\obj\Debug\Business.dll
+C:\Users\omar.soto\Documents\GitHub\PokerTimerClock\PokerTimerClockApp\Business\obj\Debug\Business.pdb
+C:\Users\aleja_000\Documents\GitHub\pokertimerclock\PokerTimerClockApp\Business\bin\Debug\Business.dll
+C:\Users\aleja_000\Documents\GitHub\pokertimerclock\PokerTimerClockApp\Business\bin\Debug\Business.pdb
+C:\Users\aleja_000\Documents\GitHub\pokertimerclock\PokerTimerClockApp\Business\obj\Debug\Business.dll
+C:\Users\aleja_000\Documents\GitHub\pokertimerclock\PokerTimerClockApp\Business\obj\Debug\Business.pdb
+C:\Users\aleja_000\Documents\GitHub\pokertimerclock\PokerTimerClockApp\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\bin\Debug\Business.dll
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\bin\Debug\Business.pdb
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Debug\Business.dll
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Debug\Business.pdb

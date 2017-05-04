@@ -1,0 +1,4 @@
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\bin\Release\Business.dll
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\bin\Release\Business.pdb
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Release\Business.dll
+C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Release\Business.pdb
