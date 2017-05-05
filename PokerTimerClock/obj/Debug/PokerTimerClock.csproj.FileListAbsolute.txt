@@ -66,3 +66,6 @@ C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\PokerTim
 C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\PokerTimerClock\obj\Debug\PokerTimerClock.g.resources
 C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\PokerTimerClock\obj\Debug\PokerTimerClock.Properties.Resources.resources
 C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\PokerTimerClock\obj\Debug\PokerTimerClock.csproj.GenerateResource.Cache
+C:\Users\paulo.robles\GH\Poker\Poker_Timer\PokerTimerClock\bin\Debug\PokerTimerClock.exe.config
+C:\Users\paulo.robles\GH\Poker\Poker_Timer\PokerTimerClock\obj\Debug\PokerTimerClock.exe
+C:\Users\paulo.robles\GH\Poker\Poker_Timer\PokerTimerClock\obj\Debug\PokerTimerClock.pdb
