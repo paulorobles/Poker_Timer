@@ -12,3 +12,8 @@ C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business
 C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
 C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Debug\Business.dll
 C:\Users\paulo.robles\Desktop\PokerTimerClock-master\PokerTimerClockApp\Business\obj\Debug\Business.pdb
+C:\GitHub\Poker_Timer\Business\bin\Debug\Business.dll
+C:\GitHub\Poker_Timer\Business\bin\Debug\Business.pdb
+C:\GitHub\Poker_Timer\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\GitHub\Poker_Timer\Business\obj\Debug\Business.dll
+C:\GitHub\Poker_Timer\Business\obj\Debug\Business.pdb
