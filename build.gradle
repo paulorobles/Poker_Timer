@@ -51,7 +51,7 @@ msbuild {
     intermediateDir = 'build/msbuild/obj'
     configuration = 'release'
     platform = mixedPlatforms
-    parameters.AssemblyName = project.name + 'QA'
+    parameters.AssemblyName = project.name + 'Dev'
     parameters.SignManifests = false
     println 'Building for following platforms: ' + mixedPlatforms
 }
