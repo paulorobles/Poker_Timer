@@ -44,7 +44,7 @@ subprojects {
 }*/
 
 msbuild {
-    solutionFile = './src/PokerClock/PokerTimerClockApp.sln'
+    solutionFile = './PokerTimerClockApp.sln'
     projectName = project.name
     targets = ['Clean', 'Rebuild']
     destinationDir = 'build/msbuild/bin'
@@ -57,9 +57,9 @@ msbuild {
 }
 //msbuild.dependsOn nugetRestore
 
-task copyDepencies(type: Copy){
+/*task copyDepencies(type: Copy){
     println ''
     doLast{
 
     }
-}
+}*/
