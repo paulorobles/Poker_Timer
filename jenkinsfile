@@ -1,0 +1,68 @@
+pipeline{
+	agent any
+	/*environment{
+		uploadSpec = """ {
+			"files": [
+				{
+					"pattern": "release/distributions/*.nupkg",
+					"target": "generic-local/"
+				}
+			]
+		}
+		"""
+		buildResults = ''
+		ORG_GRADLE_PROJECT_octoSource = 'http://vm-parasoft.southcentralus.cloudapp.azure.com:8090/nuget/packages'
+		ORG_GRADLE_PROJECT_octoServer = 'http://vm-parasoft.southcentralus.cloudapp.azure.com:8090/'
+		ORG_GRADLE_PROJECT_octoApiKey = credentials('octopus_apikey')
+		artiURL = 'http://vm-parasoft.southcentralus.cloudapp.azure.com:8081/artifactory'
+		ARTI_LOCAL = credentials('artifactory_local')
+	}*/
+	stages{
+		stage('Building'){
+			steps{
+				script{
+					def gradleInstance = Artifactory.newGradleBuild()
+					gradleInstance.useWrapper = true
+					gradleInstance.run tasks: 'clean msbuild --stacktrace'
+				}
+			}
+		}
+		stage('Packaging'){
+			when {
+				branch 'release/*'
+			}
+			steps{
+				script{
+					withEnv(["PATH+NUGET_TMP=$WORKSPACE\\build\\tmp\\nugetRestore"]){
+						def gradleInstance = Artifactory.newGradleBuild()
+						gradleInstance.useWrapper = true
+						buildResults = gradleInstance.run tasks: "nugetPack"
+						echo """ ${buildResults} """
+					}
+				}
+			}
+		}
+		/*stage('Publishing'){
+			when {
+				branch 'release/*'
+			}
+			steps{
+				script{
+					withEnv(["PATH+NUGET_TMP=$WORKSPACE\\build\\tmp\\nugetRestore"]){
+						echo "testing "
+						echo """ ${buildResults} """
+						def gradleInstance = Artifactory.newGradleBuild()
+						def artiServer = Artifactory.newServer url: artiURL, username: ARTI_LOCAL_USR, password: ARTI_LOCAL_PSW
+						gradleInstance.useWrapper = true
+						gradleInstance.run tasks: "nugetPush"
+					}
+				}
+			}
+		}
+	}*/
+	post{
+		always{
+			deleteDir()
+		}
+	}
+}
