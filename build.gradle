@@ -38,10 +38,10 @@ subprojects {
     apply plugin: 'nuget'
 }
 
-nugetRestore {
+/*nugetRestore {
     packagesConfigFile "$project.rootDir/$project.pathToSolution" //rootProject path to solution file
     packagesDirectory nugetPackagesDir
-}
+}*/
 
 msbuild {
     solutionFile = './src/PokerClock/PokerTimerClockApp.sln'
@@ -55,7 +55,7 @@ msbuild {
     parameters.SignManifests = false
     println 'Building for following platforms: ' + mixedPlatforms
 }
-msbuild.dependsOn nugetRestore
+//msbuild.dependsOn nugetRestore
 
 task copyDepencies(type: Copy){
     println ''
