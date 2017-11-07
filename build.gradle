@@ -50,10 +50,10 @@ msbuild {
     destinationDir = 'build/msbuild/bin'
     intermediateDir = 'build/msbuild/obj'
     configuration = 'release'
-    //platform = mixedPlatforms
+    platform = 'mixedPlatforms'
     parameters.AssemblyName = project.name + 'Dev'
     parameters.SignManifests = false
-    println 'Building for following platforms: ' //+ mixedPlatforms
+    println 'Building for following platforms: ' + mixedPlatforms
 }
 //msbuild.dependsOn nugetRestore
 
