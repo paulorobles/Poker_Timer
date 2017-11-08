@@ -52,6 +52,7 @@ nugetPack {
     basePath = "$project.buildDir/msbuild/bin"
 }
 nugerPack.dependsOn nugetSpec
+
 // nuget package upload, requires API key to be set
 nugetPush {
     serverUrl = 'http://vm-parasoft.southcentralus.cloudapp.azure.com:8090 '
