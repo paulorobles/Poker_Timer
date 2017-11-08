@@ -8,7 +8,7 @@ subprojects {
 }
 
 nugetRestore {
-    packagesConfigFile "$project.rootDir/$project.pathToSolution" //rootProject path to solution file
+    packagesConfigFile "PokerTimerClockApp.sln" //rootProject path to solution file
     packagesDirectory nugetPackagesDir
 }
 
