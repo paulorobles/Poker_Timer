@@ -9,7 +9,6 @@ subprojects {
 
 nugetRestore {
     packagesConfigFile "PokerTimerClockApp.sln" //rootProject path to solution file
-    packagesDirectory nugetPackagesDir
 }
 
 msbuild {
