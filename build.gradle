@@ -8,7 +8,7 @@ subprojects {
 }
 
 nugetRestore {
-    packagesConfigFile "PokerTimerClockApp.sln" //rootProject path to solution file
+    packagesConfigFile "PokerTimerClockApp.sln" 
 }
 
 msbuild {
@@ -25,9 +25,37 @@ msbuild {
 }
 msbuild.dependsOn nugetRestore
 
-/*task copyDepencies(type: Copy){
-    println ''
-    doLast{
 
-    }
-}*/
+def commonNuspecMetadata = [
+    version: version,
+    title: 'Poker clock',
+    authors: 'Guaymas',
+    owners: 'Mata',
+    projectUrl: 'https://github.com/paulorobles/Poker_Timer.git',
+    copyright: 'Copyright Robles Corp 2016-3016',
+    requireLicenseAcceptance: false,
+    dependencies: []
+]
+
+// nuget package for upload to nuget
+nugetSpec {
+    nuspec = [
+        metadata: commonNuspecMetadata + [
+            id: 'PokerTimerClock',
+            description: 'Poker tournament clock for PC',
+            summary: 'Poker timer clock was created under the assumption that 1.you have money 2.you know how to play poker 3.you are not a cry baby'
+        ]
+    ]
+}
+
+nugetPack {
+    basePath = "$project.buildDir/msbuild/bin"
+}
+nugerPack.dependsOn nugetSpec
+// nuget package upload, requires API key to be set
+nugetPush {
+    serverUrl = 'http://vm-parasoft.southcentralus.cloudapp.azure.com:8090 '
+    apiKey = project.properties.nugetApiKey
+    nupkgFile = nugetPack.packageFile
+}
+nugetPush.dependsOn nugerPack
